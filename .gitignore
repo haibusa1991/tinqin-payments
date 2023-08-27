@@ -1,0 +1,22 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+/.idea/
+/api/.flattened-pom.xml
+/api/target/
+/core/.flattened-pom.xml
+/core/target/
+/persistence/.flattened-pom.xml
+/persistence/target/
+/rest/.flattened-pom.xml
+/rest/target/
+/restexport/target/
+/restexport/.flattened-pom.xml
+/domain/.flattened-pom.xml
+/domain/target/
+/.flattened-pom.xml

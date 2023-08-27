@@ -1,0 +1,46 @@
+#MYSQL_SERVER: "${MYSQL_SERVER_NAME}:${MYSQL_SERVER_PORT}"
+#MYSQL_SERVER_NAME: localhost
+#MYSQL_SERVER_PORT: 3306
+#MYSQL_ROOT_PASSWORD: toor
+#
+#BFF_DB_NAME: tinqin-bff
+PAYMENTS_PORT: 8083
+STRIPE_TEST_KEY: sk_test_51Njr39LSQbGsEAfOJq4sJSvKR6KKRsW7m2k60EG4aNG8BbIyRf5d5ObVykFKYHcs6T66EAK6OoxsF2f2b8dlIIQf00V6FZHy1P
+#
+#STORAGE_CLIENT_NAME: localhost
+#STORAGE_PORT: 8081
+#
+#ZOOSTORE_CLIENT_NAME: localhost
+#ZOOSTORE_PORT: 8080
+#
+#JWT_SECRET: SkzL9DNlghANAvjcxxKtSiwENSPYwbbI
+
+
+#spring:
+#  datasource:
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://${MYSQL_SERVER}/${BFF_DB_NAME}?useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+#    username: root
+#    password: ${MYSQL_ROOT_PASSWORD}
+#  sql:
+#    init:
+#      mode: always
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: update
+#    open-in-view: false
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    defer-datasource-initialization: true
+#  logging:
+#    level:
+#      org.springframework.security=DEBUG
+server:
+  port: ${PAYMENTS_PORT}
+stripe-key: ${STRIPE_TEST_KEY}
+#jwt-secret: ${JWT_SECRET}
+
+
