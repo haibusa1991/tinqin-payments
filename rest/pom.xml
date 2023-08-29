@@ -29,15 +29,22 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.tinqin.restexport</groupId>-->
-<!--            <artifactId>restexport</artifactId>-->
-<!--            <version>${rest-export-revision}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.tinqin.restexport</groupId>
+            <artifactId>restexport</artifactId>
+            <version>${restexport-revision}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.tinqin.payments</groupId>
+            <artifactId>annotation-processor</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>tinqin-bff</finalName>
+        <finalName>tinqin-payments</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

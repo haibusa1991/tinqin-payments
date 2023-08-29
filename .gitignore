@@ -20,3 +20,5 @@
 /domain/.flattened-pom.xml
 /domain/target/
 /.flattened-pom.xml
+/annotation-processor/target/
+/annotation-processor/.flattened-pom.xml

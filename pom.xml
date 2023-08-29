@@ -11,13 +11,14 @@
     </parent>
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
+        <restexport-revision>0.0.2-SNAPSHOT</restexport-revision>
         <java.version>17</java.version>
     </properties>
     <groupId>com.tinqin.payments</groupId>
     <artifactId>payments</artifactId>
     <version>${revision}</version>
-    <name>Payments</name>
-    <description>Payments</description>
+    <name>tinqin-payments</name>
+    <description>tinqin-payments</description>
     <packaging>pom</packaging>
 
     <dependencies>
@@ -40,6 +41,7 @@
         <module>persistence</module>
         <module>rest</module>
         <module>restexport</module>
+        <module>annotation-processor</module>
     </modules>
 
     <build>
