@@ -1,6 +1,6 @@
 FROM openjdk:17
 LABEL authors="p.simeonov"
-EXPOSE 8082
-COPY rest/target/tinqin-bff.jar tinqin-bff.jar
+EXPOSE 8083
+COPY rest/target/tinqin-payments.jar tinqin-payments.jar
 
-ENTRYPOINT ["java", "-jar", "/tinqin-bff.jar"]
+ENTRYPOINT ["java", "-jar", "/tinqin-payments.jar"]
